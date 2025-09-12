@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontes em CSS</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         body {
             font-family: 'Work Sans' Arial, Helvetica, sans-serif;
                 /*
@@ -20,24 +21,23 @@
                 16px geralmente = 1em
                 */
             font-size: 1em;
+            font-weight: 500;
+            font-style: italic;
 
-                /*lighter normal bold bolder */
+                /*lighter - normal - bold - bolder - pesos aceitos para algumas fontes - também tem as númericas que começam em 100 e terminam em 900*/
         }
 
             h1 {
-                /* shorthand font 
-                 - font-style -> font-wheight -> font-size -> font-family 
-
-                font-family: 'Work Sans' sans-serif;
-                font-weight: bolder;
-                font-size: 3em;
-                font-style: italic; */
+                /* shorthand font | várias coisas numa única linha
+                 - font-style -> font-wheight -> font-size -> font-family */
 
                  font: italic bolder 3em 'work Sans', sans-serif;
+
             }
 
             h2 {
-                font: italic bolder 2em 'Work Sans';
+                font: bold 2em 'Work Sans';
+                text-decoration: underline;
             }
            
     </style>
